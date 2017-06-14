@@ -10,10 +10,10 @@ Inbound SIP(real ANI) -> Asterisk(some int ext.) ->chan_dongle(GSM ANI)-> extern
 
 
 To install and run systemd unit:
-copy to /etc/systemd/system/ and run systemctl daemon-reload
-systemctl enable SMS
-systemctl start SMS
-systemctl status SMS
+copy to /etc/systemd/system/ and run systemctl daemon-reload;
+systemctl enable SMS;
+systemctl start SMS;
+systemctl status SMS;
 
 
 
