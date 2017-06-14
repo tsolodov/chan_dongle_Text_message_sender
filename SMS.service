@@ -1,0 +1,15 @@
+#copy to /etc/systemd/system/ and reload systemd
+
+[Unit]
+Description=SMS Text daemon for asterisk.
+After=multi-user.target
+
+[Service]
+Restart=always
+RestartSec=30
+Type=simple
+ExecStart=/path_to_script/SMS.py 1>&2
+
+[Install]
+WantedBy=multi-user.target
+EOF
